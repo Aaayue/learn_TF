@@ -2,8 +2,8 @@ import tensorflow as tf
 
 # 三层神经网络，输入->隐藏->输出
 # 节点权值w1,w2
-w1 = tf.Variable(tf.random_norm((2,3),mean=0,stddev=2,seed=1))
-w2 = tf.Variable(tf.random_norm((3,1),mean=0,stddev=2,seed=1))
+w1 = tf.Variable(tf.random_normal((2,3),mean=0,stddev=2,seed=1))
+w2 = tf.Variable(tf.random_normal((3,1),mean=0,stddev=2,seed=1))
 
 # 输入值
 x = tf.constant([0.7,0.9],shape=[1,2])
