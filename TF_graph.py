@@ -19,7 +19,7 @@ sess.run(w1.initializer)
 sess.run(w2.initializer)
 '''
 初始化所有变量：
-init_op = tf.global_variable_initializer()
+init_op = tf.global_variables_initializer()
 sess.run(init_op)
 这种初始化方式会自动处理变量间的依赖关系
 '''
